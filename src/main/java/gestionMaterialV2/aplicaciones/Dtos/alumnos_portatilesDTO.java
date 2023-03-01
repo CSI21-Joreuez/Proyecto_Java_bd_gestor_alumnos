@@ -2,6 +2,12 @@ package gestionMaterialV2.aplicaciones.Dtos;
 
 import org.springframework.stereotype.Component;
 import gestionMaterialV2.aplicaciones.entidades.portatiles;
+
+/**
+ * @author JOD
+ *  Clase de DTO
+ * 
+ */
 @Component
 public class alumnos_portatilesDTO {
 
@@ -22,17 +28,34 @@ public class alumnos_portatilesDTO {
 	
 	private String modelo;
 	
-	private int alumno_id;
 
 	
 	
 	
 
-	public alumnos_portatilesDTO( String marca, String modelo, int alumno_id) {
+
+
+
+	public alumnos_portatilesDTO(int id_portatil, String marca, String modelo) {
+		super();
+		this.id_portatil = id_portatil;
+		this.marca = marca;
+		this.modelo = modelo;
+	}
+	
+	public alumnos_portatilesDTO( String marca, String modelo) {
 		super();
 		this.marca = marca;
 		this.modelo = modelo;
-		this.alumno_id = alumno_id;
+	}
+
+
+	public alumnos_portatilesDTO(int id_alumno, String nombre, String telefono, portatiles num_port) {
+		super();
+		this.id_alumno = id_alumno;
+		this.nombre = nombre;
+		this.telefono = telefono;
+		this.num_port = num_port;
 	}
 
 	public alumnos_portatilesDTO(String nombre, String telefono, portatiles num_port) {
@@ -41,6 +64,7 @@ public class alumnos_portatilesDTO {
 		this.telefono = telefono;
 		this.num_port = num_port;
 	}
+
 
 	public int getId_portatil() {
 		return id_portatil;
@@ -64,14 +88,6 @@ public class alumnos_portatilesDTO {
 
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
-	}
-
-	public int getAlumno_id() {
-		return alumno_id;
-	}
-
-	public void setAlumno_id(int alumno_id) {
-		this.alumno_id = alumno_id;
 	}
 
 	public int getId_alumno() {

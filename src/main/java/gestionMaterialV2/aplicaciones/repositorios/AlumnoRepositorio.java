@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import gestionMaterialV2.aplicaciones.entidades.alumnos;
 
 /**
- * @author Talamino
+ * @author JOD
  *
  */
 

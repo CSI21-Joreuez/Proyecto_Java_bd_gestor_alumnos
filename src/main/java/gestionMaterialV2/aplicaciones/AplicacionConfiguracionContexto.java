@@ -1,4 +1,5 @@
 /**
+ * @author JOD
  * 
  */
 package gestionMaterialV2.aplicaciones;
@@ -25,7 +26,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 /**
  * Definición de la configuración del contexto general de la aplicación
- * @author Talamino
+ * @author JOD
  *
  */
 

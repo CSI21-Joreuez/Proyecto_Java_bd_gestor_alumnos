@@ -29,7 +29,6 @@ public class aDAOServiceImpl implements aDAOService {
 		{
 			port.setMarca(portatilDTO.getMarca());
 			port.setModelo(portatilDTO.getModelo());
-			port.setAlumno_id(portatilDTO.getAlumno_id());
 
 		}
 		return port;

@@ -11,13 +11,13 @@ import gestionMaterialV2.aplicaciones.entidades.portatiles;
 @Service
 public class aDTOServicioImpl implements aDTOServicio {
 
-	public alumnos_portatilesDTO alumnoADTO(String nombre, String telefono, portatiles num_port) {
-		alumnos_portatilesDTO apDTO = new alumnos_portatilesDTO(nombre, telefono, num_port);
+	public alumnos_portatilesDTO alumnoADTO(int id,String nombre, String telefono, portatiles num_port) {
+		alumnos_portatilesDTO apDTO = new alumnos_portatilesDTO(id, nombre, telefono, num_port);
 		return apDTO;
 	}
 
-	public alumnos_portatilesDTO portatilADTO(String marca, String modelo, int alumno_id) {
-		alumnos_portatilesDTO paDTO = new alumnos_portatilesDTO(marca, modelo, alumno_id);
+	public alumnos_portatilesDTO portatilADTO(int id, String marca, String modelo) {
+		alumnos_portatilesDTO paDTO = new alumnos_portatilesDTO(id, marca, modelo);
 		return paDTO;
 	}
 

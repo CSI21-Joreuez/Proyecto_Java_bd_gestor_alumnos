@@ -2,6 +2,9 @@ package gestionMaterialV2.aplicaciones.entidades;
 
 import javax.persistence.*;
 
+/*
+ * @author JOD
+ */
 
 @Entity
 @Table(name="gp_portatiles",schema="dlk_gestion_portatil")
@@ -18,8 +21,7 @@ public class portatiles {
 	@Column(name="modelo")
 	private String modelo;
 	
-	@Column(name="alumno_id")
-	private int alumno_id;
+
 
 	
 
@@ -27,20 +29,14 @@ public class portatiles {
 		super();
 	}
 
-	public portatiles(String marca, String modelo, int alumno_id) {
+	public portatiles(String marca, String modelo) {
 		super();
 		this.marca = marca;
 		this.modelo = modelo;
-		this.alumno_id = alumno_id;
+
 	}
 
-	public int getAlumno_id() {
-		return alumno_id;
-	}
 
-	public void setAlumno_id(int alumno_id) {
-		this.alumno_id = alumno_id;
-	}
 
 
 

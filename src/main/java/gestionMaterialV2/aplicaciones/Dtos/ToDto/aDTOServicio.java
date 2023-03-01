@@ -15,7 +15,7 @@ public interface aDTOServicio {
 	 * @param objeto portatil
 	 * @return
 	 */
-	public alumnos_portatilesDTO  alumnoADTO(String nombre, String telefono, portatiles num_port);
+	public alumnos_portatilesDTO  alumnoADTO(int id, String nombre, String telefono, portatiles num_port);
 	
 	
 	/**
@@ -25,6 +25,6 @@ public interface aDTOServicio {
 	 * @param objeto alumno
 	 * @return
 	 */
-	public alumnos_portatilesDTO  portatilADTO(String marca, String modelo,  int alumno_id);
+	public alumnos_portatilesDTO  portatilADTO(int id, String marca, String modelo);
 	
 }

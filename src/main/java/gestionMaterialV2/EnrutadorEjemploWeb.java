@@ -6,7 +6,7 @@ import gestionMaterialV2.aplicaciones.AplicacionConfiguracionContexto;
 import gestionMaterialV2.web.WebConfiguracionContexto;
 
 /**
- * @author Talamino
+ * @author JOD
  */
 public class EnrutadorEjemploWeb extends AbstractAnnotationConfigDispatcherServletInitializer {
 

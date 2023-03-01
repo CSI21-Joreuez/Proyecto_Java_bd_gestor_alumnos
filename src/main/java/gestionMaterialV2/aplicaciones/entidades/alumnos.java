@@ -2,6 +2,9 @@ package gestionMaterialV2.aplicaciones.entidades;
 
 import javax.persistence.*;
 
+/*
+ * @author JOD
+ */
 
 @Entity
 @Table(name="ga_alumnos",schema="dlk_gestion_alumnos")
